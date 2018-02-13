@@ -23,6 +23,12 @@
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getInterviewQuestion()" value="Interview Question" />
+        <tr>
+            <td>
+                <div id="jobTool"></div>
+            </td>
+        </tr>
+        <input type="button" class="button is-warning" onclick="getjobTool()" value="Job Search Tool" />
     </tbody>
 </table>
 <script>
@@ -141,6 +147,7 @@
         "RDS Amazon Relational Database Service",
         "EC2 Amazon Elastic Compute Cloud",
         "Redis Database",
+        "Lodash",
         "ActiveMQ",
         "Cloudwatch",
         "JUnit",
@@ -306,21 +313,28 @@
         "Give me an example of a time you had to take a creative and unusual approach to solve coding problem. How did this idea come to your mind? Why do you think it was unusual?",
         "Give me an example of a project that completely failed. Why do you think it was a failure? Could there be anything done differently in order to turn it into success?",
         "What's the difference between imperative programming and declarative programming?",
-"What are some tenets of functional programming?",
-"What does AJAX stand for? Explain how it works in as much detail as possible",
-"What is the difference between classical inheritance and prototypal inheritance?",
-"What are the pros and cons of functional programming vs object-oriented programming?",
-"Tell me how the Internet works.",
-"What is continuous integration?",
-"What is functional programming?",
-"What is two-way data binding? Answer: https://stackoverflow.com/questions/13504906/what-is-two-way-binding",
-"What are the pros and cons of immutability? Answer: http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/ https://www.quora.com/What-are-the-pros-and-cons-of-immutability-and-immutable-data",
-"Name as many kinds of loops as you can. Answer: For loop, for in loop, while loop, do while loop https://www.w3schools.com/js/js_loop_for.asp",
-"Name as many different kinds of conditionals as you can. Answer: if, else, else if, switch https://www.w3schools.com/js/js_if_else.asp",
-"What HTTP methods are supported by REST? Answer: Get, Post, Patch, Delete, Put https://restfulapi.net/http-methods/",
-"What is REST and RESTful? Answer: Representational state transfer (REST) is a style of software architecture. As described in a dissertation by Roy Fielding, REST is an 'architectural style' that basically exploits the existing technology and protocols of the Web. RESTful is typically used to refer to web services implementing such an architecture. https://stackoverflow.com/questions/1568834/whats-the-difference-between-rest-restful",
-"What is an ORM? Answer: What is an ORM? From Wikipedia: Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems in object-oriented programming languages. and The equivalent of ORMs for Document-oriented databases are called Object-Document Mappers (ODMs). JSData converts data from JavaScript Objects to formats used by MySQL, MongoDB, RethinkDB, Firebase, etc. and vice versa. https://www.sitepoint.com/3-javascript-orms-you-might-not-know/ https://www.js-data.io/v3.0/docs/what-is-an-orm",
-"What is a relational database and how does it differ from a non-relational database? Answer:  Relational represent and store data in tables and rows vs non relational represent data in collectino of json documents. Mongodb is non relational. https://stackoverflow.com/questions/4811744/what-is-the-difference-between-a-relational-and-non-relational-database"
+        "What are some tenets of functional programming?",
+        "What does AJAX stand for? Explain how it works in as much detail as possible",
+        "What is the difference between classical inheritance and prototypal inheritance?",
+        "What are the pros and cons of functional programming vs object-oriented programming?",
+        "Tell me how the Internet works.",
+        "What is continuous integration?",
+        "What is functional programming?",
+        "What is two-way data binding? Answer: https://stackoverflow.com/questions/13504906/what-is-two-way-binding",
+        "What are the pros and cons of immutability? Answer: http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/ https://www.quora.com/What-are-the-pros-and-cons-of-immutability-and-immutable-data",
+        "Name as many kinds of loops as you can. Answer: For loop, for in loop, while loop, do while loop https://www.w3schools.com/js/js_loop_for.asp",
+        "Name as many different kinds of conditionals as you can. Answer: if, else, else if, switch https://www.w3schools.com/js/js_if_else.asp",
+        "What HTTP methods are supported by REST? Answer: Get, Post, Patch, Delete, Put https://restfulapi.net/http-methods/",
+        "What is REST and RESTful? Answer: Representational state transfer (REST) is a style of software architecture. As described in a dissertation by Roy Fielding, REST is an 'architectural style' that basically exploits the existing technology and protocols of the Web. RESTful is typically used to refer to web services implementing such an architecture. https://stackoverflow.com/questions/1568834/whats-the-difference-between-rest-restful",
+        "What is an ORM? Answer: What is an ORM? From Wikipedia: Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems in object-oriented programming languages. and The equivalent of ORMs for Document-oriented databases are called Object-Document Mappers (ODMs). JSData converts data from JavaScript Objects to formats used by MySQL, MongoDB, RethinkDB, Firebase, etc. and vice versa. https://www.sitepoint.com/3-javascript-orms-you-might-not-know/ https://www.js-data.io/v3.0/docs/what-is-an-orm",
+        "What is a relational database and how does it differ from a non-relational database? Answer:  Relational represent and store data in tables and rows vs non relational represent data in collectino of json documents. Mongodb is non relational. https://stackoverflow.com/questions/4811744/what-is-the-difference-between-a-relational-and-non-relational-database",
+        "Do you like to work alone or as part of a team?",
+        "What’s the best part about your current/last job?",
+        "What’s the most frustrating part about your current/last job?",
+        "What are your weaknesses?",
+        "What in particular are you most interested in working on?",
+        "Why are you leaving your current job (or why did you leave your last job)?",
+        "Do you have examples of your work?"
 
 
 
@@ -330,5 +344,23 @@
 
     function getInterviewQuestion() {
         document.getElementById("interviewQuestion").innerHTML = arrThree[Math.floor(Math.random() * arrThree.length)];
+    }
+</script>
+
+<script>
+    var arrFour = [
+        "http://huntr.co",
+        "http://builtincolorado.com/jobs",
+        "http://www.indeed.com/",
+        "http://www.glassdoor.com/",
+        "https://www.pramp.com/#/"
+
+
+
+
+    ];
+
+    function getjobTool() {
+        document.getElementById("jobTool").innerHTML = arrFour[Math.floor(Math.random() * arrFour.length)];
     }
 </script>
