@@ -7,17 +7,19 @@
     <tbody>
         <tr>
             <td>
-            <div id="interview" class="center"></div></td>
+                <div id="interview" class="center"></div>
+            </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getItem()" value="RANDOM INTERVIEW LINK" />
         <tr>
             <td>
-            <div id="topic"></div>
+                <div id="topic"></div>
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getItemTopic()" value="TOPIC to Study" />
-        <tr><td>
-            <div id="interviewQuestion"></div>
+        <tr>
+            <td>
+                <div id="interviewQuestion"></div>
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getInterviewQuestion()" value="Interview Question" />
@@ -227,42 +229,101 @@
         "Tell me about a project you have worked on.",
         "Do you have any questions for us? (knowledge of company, team/workflow questions, no salary/compensation)",
         "Write a function that takes three arguments, sums all three and returns the result",
-"Write a funciton that takes a string and returns the upperase version of that string with an '!'",
-"Write a function that takes 2 arguments and returns the bigger of the two",
-"Print the the numbers from 1 to 10 using a for loops",
-"Print the numbers from 10 to 1 using a while loop",
-"Write a function that prints the numbers 1 to 10 using a while loop",
-"Write a function that calculates how many seconds there in a day",
-"Write a function that accepts a number it will return the factorial of that number.",
-"Have you learned something new or interesting lately?",
-"Why did you get into coding, programming, etc.?",
-"What is your preferred development environment?",
-"What front-end framework do you prefer? Why?",
-"What’s your favorite technology?",
-"Name an app with good design.",
-"What is something you have learned in the last week?",
-"Tell me about how you debug.",
-"What are your favorite features about ES2015?",
-"What is the difference between undefined and not defined in JavaScript?",
-"What is a “closure” in JavaScript?",
-"What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?",
-"What is NaN? What is its type? How can you reliably test if a value is equal to NaN?",
-"What are the advantages of using JavaScript?",
-"What are disadvantages of using JavaScript?",
-"What are the valid scopes of a variable in JavaScript?",
-"Explain the difference between synchronous and asynchronous functions.",
-"What is an example of an immutable object in JavaScript?",
-"What tools and techniques do you use debugging JavaScript code?",
-"What are the data types in JavaScript?",
-"How does inheritance work in JavaScript?",
-"How can variables be assigned in Javascript in ES2015?",
-"What’s the difference between == and === in JS?",
-"What's the difference between Primitive and Reference types in Javascript?",
-"Explain how 'this' works in JavaScript",
-"Explain 'hoisting'.",
-"Can you name two programming paradigms important for JavaScript app developers?",
-"What are the pros and cons of using Promises instead of callbacks?",
-"What is the event loop?"
+        "Write a funciton that takes a string and returns the upperase version of that string with an '!'",
+        "Write a function that takes 2 arguments and returns the bigger of the two",
+        "Print the the numbers from 1 to 10 using a for loops",
+        "Print the numbers from 10 to 1 using a while loop",
+        "Write a function that prints the numbers 1 to 10 using a while loop",
+        "Write a function that calculates how many seconds there in a day",
+        "Write a function that accepts a number it will return the factorial of that number.",
+        "Have you learned something new or interesting lately?",
+        "Why did you get into coding, programming, etc.?",
+        "What is your preferred development environment?",
+        "What front-end framework do you prefer? Why?",
+        "What’s your favorite technology?",
+        "Name an app with good design.",
+        "What is something you have learned in the last week?",
+        "Tell me about how you debug.",
+        "What are your favorite features about ES2015?",
+        "What is the difference between undefined and not defined in JavaScript?",
+        "What is a “closure” in JavaScript?",
+        "What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?",
+        "What is NaN? What is its type? How can you reliably test if a value is equal to NaN?",
+        "What are the advantages of using JavaScript?",
+        "What are disadvantages of using JavaScript?",
+        "What are the valid scopes of a variable in JavaScript?",
+        "Explain the difference between synchronous and asynchronous functions.",
+        "What is an example of an immutable object in JavaScript?",
+        "What tools and techniques do you use debugging JavaScript code?",
+        "What are the data types in JavaScript?",
+        "How does inheritance work in JavaScript?",
+        "How can variables be assigned in Javascript in ES2015?",
+        "What’s the difference between == and === in JS?",
+        "What's the difference between Primitive and Reference types in Javascript?",
+        "Explain how 'this' works in JavaScript",
+        "Explain 'hoisting'.",
+        "Can you name two programming paradigms important for JavaScript app developers?",
+        "What are the pros and cons of using Promises instead of callbacks?",
+        "What is the event loop?",
+        "Describe event bubbling.",
+        "What is the DOM?",
+        "What is the box model?",
+        "What are data-attributes and why are they useful?",
+        "What is minification?",
+        "What does CSS Stand for and what does its name mean?",
+        "What is z-index in CSS?",
+        "What is Semantic HTML?",
+        "What is HTML?",
+        "Describe pseudo-elements and discuss what they are used for.",
+        "What's the difference between a relative, fixed, absolute and statically positioned element?",
+        "How is responsive design different from adaptive design?",
+        "What's the difference between inline and inline-block?",
+        "Tell me about yourself.",
+        "Tell me about a project you have worked on.",
+        "Do you have any questions for us? (knowledge of company, team/workflow questions, no salary/compensation)",
+        "Which of your managers gets the best results and most value out of you and why?",
+        "If I were to ask your last set of coworkers to describe you, what do you think they'd say?",
+        "Have you made an account on our website and what do you think can be improved about the process?",
+        "What’s the one thing we haven’t asked you about that you want to make sure we know?",
+        "When you don’t know the answer to something, what is the first thing that you do?",
+        "If you could design your dream job, what would it look like?",
+        "Can you tell me about a side project you've worked on (outside of school or work) in the past year or so?",
+        "Tell me about your process of getting work done. When you get a new job or take on a new project, how do you go about doing it successfully?",
+        "How did you first learn to program and what was the first thing you built?",
+        "Describe a coworker's working style.",
+        "What’s your biggest weakness?",
+        "If you could master one technology this year, what would it be?",
+        "What books are on your reading list?",
+        "How do you handle criticism?",
+        "Who are your heroes?",
+        "Why do you want to work here?",
+        "Describe a situation when you did much more than it was expected from you to get the project done. Were your efforts recognized? By whom and how? How did that make you feel?",
+        "Where do you see yourself in 3 years?",
+        "Describe a situation in which you met a major obstacle in order to complete a project. How did you deal with it? What steps did you take?",
+        "I’d be interested in hearing about a miscommunication you had with your supervisor. How did you solve it? What was the reason for that? How did you deal with that situation?",
+        "Give an example of a time when you didn’t agree with other programmer. Did you stand up for something that you believed was right?",
+        "Tell me about a time when you had to work with a difficult person to accomplish a goal. What was the biggest challenge? How did you handle it?",
+        "Give me an example of a time you had to take a creative and unusual approach to solve coding problem. How did this idea come to your mind? Why do you think it was unusual?",
+        "Give me an example of a project that completely failed. Why do you think it was a failure? Could there be anything done differently in order to turn it into success?",
+        "What's the difference between imperative programming and declarative programming?",
+"What are some tenets of functional programming?",
+"What does AJAX stand for? Explain how it works in as much detail as possible",
+"What is the difference between classical inheritance and prototypal inheritance?",
+"What are the pros and cons of functional programming vs object-oriented programming?",
+"Tell me how the Internet works.",
+"What is continuous integration?",
+"What is functional programming?",
+"What is two-way data binding? Answer: https://stackoverflow.com/questions/13504906/what-is-two-way-binding",
+"What are the pros and cons of immutability? Answer: http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/ https://www.quora.com/What-are-the-pros-and-cons-of-immutability-and-immutable-data",
+"Name as many kinds of loops as you can. Answer: For loop, for in loop, while loop, do while loop https://www.w3schools.com/js/js_loop_for.asp",
+"Name as many different kinds of conditionals as you can. Answer: if, else, else if, switch https://www.w3schools.com/js/js_if_else.asp",
+"What HTTP methods are supported by REST? Answer: Get, Post, Patch, Delete, Put https://restfulapi.net/http-methods/",
+"What is REST and RESTful? Answer: Representational state transfer (REST) is a style of software architecture. As described in a dissertation by Roy Fielding, REST is an 'architectural style' that basically exploits the existing technology and protocols of the Web. RESTful is typically used to refer to web services implementing such an architecture. https://stackoverflow.com/questions/1568834/whats-the-difference-between-rest-restful",
+"What is an ORM? Answer: What is an ORM? From Wikipedia: Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems in object-oriented programming languages. and The equivalent of ORMs for Document-oriented databases are called Object-Document Mappers (ODMs). JSData converts data from JavaScript Objects to formats used by MySQL, MongoDB, RethinkDB, Firebase, etc. and vice versa. https://www.sitepoint.com/3-javascript-orms-you-might-not-know/ https://www.js-data.io/v3.0/docs/what-is-an-orm",
+"What is a relational database and how does it differ from a non-relational database? Answer:  Relational represent and store data in tables and rows vs non relational represent data in collectino of json documents. Mongodb is non relational. https://stackoverflow.com/questions/4811744/what-is-the-difference-between-a-relational-and-non-relational-database"
+
+
+
 
 
     ];
