@@ -211,7 +211,7 @@
         "C#",
         "ASP.NET",
         "Ansible",
-        "ELK",
+        "ELK | https://qbox.io/blog/welcome-to-the-elk-stack-elasticsearch-logstash-kibana",
         "GoCD Continuous Delivery",
         "Team City",
         "D3",
@@ -338,7 +338,8 @@
         "What are your weaknesses?",
         "What in particular are you most interested in working on?",
         "Why are you leaving your current job (or why did you leave your last job)?",
-        "Do you have examples of your work?"
+        "Do you have examples of your work?",
+        "What is a potential pitfall with using typeof bar === 'object' to determine if bar is an object? How can this pitfall be avoided?"
 
 
 
@@ -361,9 +362,13 @@
         "https://www.toptal.com/",
         "http://www.dice.com",
         "https://triplebyte.com/"
+        
     ];
 
     function getjobTool() {
         document.getElementById("jobTool").innerHTML = arrFour[Math.floor(Math.random() * arrFour.length)];
     }
 </script>
+
+
+{{!-- Destructuring Assignment, put in links randomizer https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment --}}
