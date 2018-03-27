@@ -29,6 +29,12 @@
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getjobTool()" value="Job Search Tool" />
+        <tr>
+            <td>
+                <div id="getVideo"></div>
+            </td>
+        </tr>
+        <input type="button" class="button is-warning" onclick="getVideo()" value="Videos" />
     </tbody>
 </table>
 <script>
@@ -372,6 +378,7 @@
         "http://www.glassdoor.com/",
         "https://www.pramp.com/#/",
         "https://www.toptal.com/",
+        "http://www.hired.com/",
         "http://www.dice.com",
         "https://triplebyte.com/"
     ];
@@ -381,5 +388,15 @@
     }
 </script>
 
+<script>
+    var arrFive = [
+        "https://www.youtube.com/watch?v=k7-N8R0-KY4"
+        
+    ];
+
+    function getVideo() {
+        document.getElementById("getVideo").innerHTML = arrFive[Math.floor(Math.random() * arrFive.length)];
+    }
+</script>
 
 {{!-- Destructuring Assignment, put in links randomizer https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment --}}
