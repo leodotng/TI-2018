@@ -34,6 +34,12 @@
                 <div id="getVideo"></div>
             </td>
         </tr>
+        <input type="button" class="button is-warning" onclick="getJavascript()" value="JavaScript" />
+        <tr>
+            <td>
+                <div id="javascript"></div>
+            </td>
+        </tr>
         <input type="button" class="button is-warning" onclick="getVideo()" value="Videos" />
     </tbody>
 </table>
@@ -409,5 +415,15 @@
 
     function getVideo() {
         document.getElementById("getVideo").innerHTML = arrFive[Math.floor(Math.random() * arrFive.length)];
+    }
+</script>
+<script>
+    var arrSix = [
+        "https://medium.freecodecamp.org/javascripts-apply-call-and-bind-explained-by-hosting-a-cookout-84b85977ee11",
+        "https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e"        
+    ];
+
+    function getJavascript() {
+        document.getElementById("javascript").innerHTML = arrSix[Math.floor(Math.random() * arrSix.length)];
     }
 </script>
