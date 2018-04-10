@@ -41,6 +41,12 @@
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getVideo()" value="Videos" />
+        <tr>
+            <td>
+                <div id="computerscience"></div>
+            </td>
+        </tr>
+        <input type="button" class="button is-warning" onclick="getComputerScience()" value="Computer Science" />
     </tbody>
 </table>
 <script>
@@ -430,5 +436,15 @@
 
     function getJavascript() {
         document.getElementById("javascript").innerHTML = arrSix[Math.floor(Math.random() * arrSix.length)];
+    }
+</script>
+<script>
+    var arrSeven = [
+        "https://medium.freecodecamp.org/time-is-complex-but-priceless-f0abd015063c",
+        
+    ];
+
+    function getComputerScience() {
+        document.getElementById("computerscience").innerHTML = arrSeven[Math.floor(Math.random() * arrSeven.length)];
     }
 </script>
