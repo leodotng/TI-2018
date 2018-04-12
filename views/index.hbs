@@ -1,8 +1,8 @@
-<h1>{{title}}</h1>
+{{!-- <h1>{{title}}</h1> --}}
 <p>
     <h2>Welcome to {{title}}</h2>
 </p>
-
+<center>
 <table class="table">
     <tbody>
         <tr>
@@ -47,8 +47,21 @@
             </td>
         </tr>
         <input type="button" class="button is-warning" onclick="getComputerScience()" value="Computer Science" />
+        <tr>
+            <td>
+                <div id="repl"></div>
+            </td>
+        </tr>
+        <input type="button" class="button is-warning" onclick="getRepl()" value="REPL Code Sample" />
+        <tr>
+            <td>
+                <div id="vocab"></div>
+            </td>
+        </tr>
+        <input type="button" class="button is-warning" onclick="getVocab()" value="New Vocab" />
     </tbody>
 </table>
+</center>
 <script>
     var arr = [
         "http://www.techbeamers.com/top-web-developer-interview-questions/",
@@ -183,6 +196,7 @@
         "ActiveMQ",
         "Cloudwatch",
         "JUnit",
+        "JIRA",
         "Simulink",
         "Swift",
         "CURL",
@@ -204,6 +218,7 @@
         "GIS | A geographic information system (GIS) is a system designed to capture, store, manipulate, analyze, manage, and present spatial or geographic data.",
         "Mithril",
         "BigTable",
+        "OBIEE",
         "Restify",
         "Azure",
         "Mockito",
@@ -453,7 +468,8 @@
         "https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e",
         "https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e",
         "https://toddmotto.com/understanding-the-this-keyword-in-javascript/",
-        "https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3"
+        "https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3",
+        "https://www.youtube.com/watch?v=sWOXYDBbz0g"
     ];
 
     function getJavascript() {
@@ -469,5 +485,28 @@
 
     function getComputerScience() {
         document.getElementById("computerscience").innerHTML = arrSeven[Math.floor(Math.random() * arrSeven.length)];
+    }
+</script>
+<script>
+    var arrEight = [
+        "https://repl.it/@leodotng/Fibonacci-Javascript",
+        "https://repl.it/@leodotng/Convert-to-Celsius"
+
+    ];
+
+    function getRepl() {
+        document.getElementById("repl").innerHTML = arrEight[Math.floor(Math.random() * arrEight.length)];
+    }
+</script>
+<script>
+    var arrNine = [
+        "instantiation",
+        "Constructor Functions",
+        "Classical Inheritance",
+        "OWASP | Open Web Application Security Project",
+    ];
+
+    function getVocab() {
+        document.getElementById("vocab").innerHTML = arrNine[Math.floor(Math.random() * arrNine.length)];
     }
 </script>
