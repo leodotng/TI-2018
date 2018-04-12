@@ -1,73 +1,74 @@
-{{!-- <h1>{{title}}</h1> --}}
+{{!--
+<h1>{{title}}</h1> --}}
 <p>
     <h2>Welcome to {{title}}</h2>
 </p>
 <center>
-<table class="table">
-    <tbody>
-        <tr>
-            <td>
-                <div id="interview" class="center"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getItem()" value="RANDOM INTERVIEW LINK" />
-        <tr>
-            <td>
-                <div id="topic"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getItemTopic()" value="TOPIC to Study" />
-        <tr>
-            <td>
-                <div id="interviewQuestion"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getInterviewQuestion()" value="Interview Question" />
-        <tr>
-            <td>
-                <div id="jobTool"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getjobTool()" value="Job Search Tool" />
-        <tr>
-            <td>
-                <div id="getVideo"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getJavascript()" value="JavaScript" />
-        <tr>
-            <td>
-                <div id="javascript"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getVideo()" value="Videos" />
-        <tr>
-            <td>
-                <div id="computerscience"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getComputerScience()" value="Computer Science" />
-        <tr>
-            <td>
-                <div id="repl"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getRepl()" value="REPL Code Sample" />
-        <tr>
-            <td>
-                <div id="vocab"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getVocab()" value="New Vocab" />
-        <tr>
-            <td>
-                <div id="codepractice"></div>
-            </td>
-        </tr>
-        <input type="button" class="button is-warning" onclick="getCodepractice()" value="Code Practice" />
-        
-    </tbody>
-</table>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    <div id="interview" class="center"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getItem()" value="RANDOM INTERVIEW LINK" />
+            <tr>
+                <td>
+                    <div id="topic"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getItemTopic()" value="TOPIC to Study" />
+            <tr>
+                <td>
+                    <div id="interviewQuestion"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getInterviewQuestion()" value="Interview Question" />
+            <tr>
+                <td>
+                    <div id="jobTool"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getjobTool()" value="Job Search Tool" />
+            <tr>
+                <td>
+                    <div id="getVideo"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getJavascript()" value="JavaScript" />
+            <tr>
+                <td>
+                    <div id="javascript"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getVideo()" value="Videos" />
+            <tr>
+                <td>
+                    <div id="computerscience"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getComputerScience()" value="Computer Science" />
+            <tr>
+                <td>
+                    <div id="repl"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getRepl()" value="REPL Code Sample" />
+            <tr>
+                <td>
+                    <div id="vocab"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getVocab()" value="New Vocab" />
+            <tr>
+                <td>
+                    <div id="codepractice"></div>
+                </td>
+            </tr>
+            <input type="button" class="button is-warning" onclick="getCodepractice()" value="Code Practice" />
+
+        </tbody>
+    </table>
 </center>
 <script>
     var arr = [
@@ -496,8 +497,7 @@
     function getJavascript() {
         document.getElementById("javascript").innerHTML = arrSix[Math.floor(Math.random() * arrSix.length)];
     }
-</script> 
-{{!-- Computer Science --}}
+</script> {{!-- Computer Science --}}
 <script>
     var arrSeven = [
         "https://medium.freecodecamp.org/time-is-complex-but-priceless-f0abd015063c",
@@ -527,8 +527,8 @@
         "Constructor Functions",
         "Classical Inheritance",
         "OWASP | Open Web Application Security Project",
-        "hashing", 
-        "macs", 
+        "hashing",
+        "macs",
         "PK-crypt",
         "RDBMS",
         "Primitive data type",
@@ -544,7 +544,7 @@
     var arrTen = [
         "http://www.codewars.com/",
         "http://www.codefights.com/"
-       
+
     ];
 
     function getCodepractice() {
