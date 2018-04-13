@@ -5,7 +5,8 @@ module.exports = {
   development: {
     client: "postgresql",
     connection: {
-      database: process.env.DATABASE_NAME
+      database: 'tidata'
+      // database: process.env.DATABASE_NAME
     }
   },
 
