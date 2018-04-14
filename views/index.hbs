@@ -1,7 +1,9 @@
 {{!--
 <h1>{{title}}</h1> --}}
 <p>
-    <h2>Welcome to {{title}}</h2>
+    <h1>Welcome to {{title}}</h1>
+    When you first start looking for software engineering and developer jobs its easy to get distracted and off topic. Use this
+    randomizer to keep yourself motivated and focused!
 
 </p>
 <center>
@@ -110,7 +112,7 @@
         </tbody>
     </table>
 </center>
-    <div>
+<div>
     <form>
         <div class="control space">
             Add Interview Link
@@ -121,46 +123,46 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-    </div>
+</div>
 
-        <div class="control space">
-            Add Topic
-            <input class="input is-rounded" type="text" placeholder="Topic">
-        </div>
-        <div class="control space">
-            Add Interview Question
-            <input class="input is-rounded" type="text" placeholder="Interview Question">
-        </div>
-        <div class="control space">
-            Add Job Search Tool
-            <input class="input is-rounded" type="text" placeholder="Job Search Tool">
-        </div>
-        <div class="control space">
-            Add videos
-            <input class="input is-rounded" type="text" placeholder="Videos">
-        </div>
-        <div class="control space">
-            Add Javascript Article
-            <input class="input is-rounded" type="text" placeholder="Javascript Article">
-        </div>
-        <div class="control space">
-            Add Computer Science Link
-            <input class="input is-rounded" type="text" placeholder="Computer Science Link">
-        </div>
-        <div class="control space">
-            Add REPL
-            <input class="input is-rounded" type="text" placeholder="REPL code">
-        </div>
-        <div class="control space">
-            Code Vocabulary
-            <input class="input is-rounded" type="text" placeholder="Code Vocabulary">
-        </div>
-        <div class="control space">
-            Add Code Practice Link
-            <input class="input is-rounded" type="text" placeholder="Code Practice Link">
-        </div>
+<div class="control space">
+    Add Topic
+    <input class="input is-rounded" type="text" placeholder="Topic">
+</div>
+<div class="control space">
+    Add Interview Question
+    <input class="input is-rounded" type="text" placeholder="Interview Question">
+</div>
+<div class="control space">
+    Add Job Search Tool
+    <input class="input is-rounded" type="text" placeholder="Job Search Tool">
+</div>
+<div class="control space">
+    Add videos
+    <input class="input is-rounded" type="text" placeholder="Videos">
+</div>
+<div class="control space">
+    Add Javascript Article
+    <input class="input is-rounded" type="text" placeholder="Javascript Article">
+</div>
+<div class="control space">
+    Add Computer Science Link
+    <input class="input is-rounded" type="text" placeholder="Computer Science Link">
+</div>
+<div class="control space">
+    Add REPL
+    <input class="input is-rounded" type="text" placeholder="REPL code">
+</div>
+<div class="control space">
+    Code Vocabulary
+    <input class="input is-rounded" type="text" placeholder="Code Vocabulary">
+</div>
+<div class="control space">
+    Add Code Practice Link
+    <input class="input is-rounded" type="text" placeholder="Code Practice Link">
+</div>
 
-    </form>
+</form>
 
 
 
@@ -168,6 +170,8 @@
 <script>
     var arr = [
         "http://www.techbeamers.com/top-web-developer-interview-questions/",
+        "https://medium.com/javascript-scene",
+        "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0",
         "https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95",
         "http://www.techbeamers.com/top-web-developer-interview-questions/",
         "https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95",
@@ -222,6 +226,7 @@
         "https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9",
         "https://www.scotch.io/bar-talk/4-javascript-design-patterns-you-should-know",
         "https://medium.com/basecs",
+        "https://medium.com/javascript-scene/why-hiring-is-so-hard-in-tech-c462c3230017",
         "https://code.tutsplus.com/articles/data-structures-with-javascript-tree--cms-23393",
         "Code Academy Factorial Functions: https://www.codecademy.com/courses/javascript-lesson-205/1/1",
         "https://blog.anthonycomito.com/answer-the-anagram-interview-question-with-es6-c7621e43596d",
@@ -250,7 +255,8 @@
         "https://medium.freecodecamp.org/here-are-three-upcoming-changes-to-javascript-that-youll-love-387bce1bfb0b",
         "https://medium.freecodecamp.org/the-essential-guide-to-take-home-coding-challenges-a0e746220dd7",
         "https://www.codementor.io/blog/software-engineer-interview-questions-3ey7wme14h?utm_content=posts&amp;utm_source=sendgrid&amp;utm_medium=email&amp;utm_term=post-3ey7wme14h&amp;utm_campaign=newsletter20180411",
-        "https://ditam.github.io/posts/fizzbuzz/"
+        "https://ditam.github.io/posts/fizzbuzz/",
+        "https://teamtreehouse.com/community/what-type-of-paradigm-language-javascript-is"
 
     ];
 
@@ -391,6 +397,7 @@
         "Tableau",
         "Selenium",
         "C#",
+        "ORM - Object Relational Mapping",
         "ASP.NET",
         "Ansible",
         "ELK | https://qbox.io/blog/welcome-to-the-elk-stack-elasticsearch-logstash-kibana",
@@ -413,6 +420,7 @@
         "mariadb",
         "Varnish",
         "oCaml",
+        "AVA Javascript Test Runner",
         "ReasonML",
         "IntelliJ",
         "Sproutcore",
@@ -564,7 +572,8 @@
         "https://www.toptal.com/",
         "http://www.hired.com/",
         "http://www.dice.com",
-        "https://triplebyte.com/"
+        "https://triplebyte.com/",
+        "http://talent.galvanize.com/"
     ];
 
     function getjobTool() {
@@ -594,7 +603,14 @@
         "https://toddmotto.com/understanding-the-this-keyword-in-javascript/",
         "https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3",
         "https://www.youtube.com/watch?v=sWOXYDBbz0g",
-        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
+        "https://github.com/justsml/array-flashcards/blob/master/PITCHME.md",
+        "https://www.quora.com/JavaScript-follows-which-Programming-Paradigm",
+        "https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript",
+        "https://coderwall.com/p/_ggh2w/the-array-native-every-filter-map-some-foreach-methods",
+        "https://medium.freecodecamp.org/three-ways-to-return-largest-numbers-in-arrays-in-javascript-5d977baa80a1",
+        "https://codeburst.io/array-methods-explained-filter-vs-map-vs-reduce-vs-foreach-ea3127c6d319"
+
     ];
 
     function getJavascript() {
@@ -606,7 +622,9 @@
         "https://medium.freecodecamp.org/time-is-complex-but-priceless-f0abd015063c",
         "https://www.javatpoint.com/javascript-data-types",
         "https://repl.it/@leodotng/Fibonacci-Javascript",
+        "http://codingmiles.com/sorting-algorithms-bubble-sort-using-javascript/",
         "http://blog.benoitvallon.com/sorting-algorithms-in-javascript/the-bubble-sort-algorithm/"
+        
 
     ];
 
@@ -630,6 +648,8 @@
         "instantiation",
         "Constructor Functions",
         "Classical Inheritance",
+        "Prototypal Inheritance",
+        "Closures",
         "OWASP | Open Web Application Security Project",
         "hashing",
         "macs",
@@ -637,7 +657,11 @@
         "RDBMS",
         "Primitive data type",
         "Non-primitive (reference) data type",
-        "object literal"
+        "object literal",
+        "imperative/procedural programming",
+        "OOP (Object-Oriented Programming)",
+        "functional programming",
+        "Paradigm"
     ];
 
     function getVocab() {
