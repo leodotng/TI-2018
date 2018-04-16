@@ -109,6 +109,16 @@
                 </td>
             </tr>
             <div class="space"></div>
+            <tr>
+                <td>
+                    <input type="button" class="button is-primary is-small space is-bordered is-focused" onclick="getArraymethods()" value="Array Methods"
+                    />
+                </td>
+                <td>
+                    <div id="arraymethods">Array Methods</div>
+                </td>
+            </tr>
+            <div class="space"></div>
         </tbody>
     </table>
 </center>
@@ -210,6 +220,7 @@
         "https://www.airpair.com/javascript/javascript-code-mentoring",
         "https://www.udemy.com/top-javascript-interview-questions-and-answers/",
         "https://www.brainscape.com/packs/javascript-technical-interview-8872729",
+        "https://stackoverflow.com/questions/2492123/pro-javascript-programmer-interview-questions-with-answers",
         "http://www.chem.umd.edu/wp-content/uploads/2009/09/15-Toughest-Interview-Questions-and-Answers.pdf",
         "http://poincare.matf.bg.ac.rs/~jelenagr/ASP/testHeadHunter.pdf",
         "http://engineeringinterviewquestions.com/technical-interview-questions-answers-pdf-free-download/",
@@ -219,6 +230,7 @@
         "https://www.geeksforgeeks.org/fundamentals-of-algorithms/",
         "https://gist.github.com/jaysonrowe/1592432",
         "https://github.com/vaidehijoshi/basecs-series",
+        "https://www.codeproject.com/Articles/620811/Latest-JavaScript-Interview-Questions-and-Answers",
         "https://hackernoon.com/breadth-first-search-in-javascript-e655cd824fa4",
         "https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/",
         "https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/",
@@ -237,6 +249,7 @@
         "http://2ality.com/2015/06/tail-call-optimization.html",
         "https://davidwalsh.name/promises",
         "https://davidwalsh.name/essential-javascript-functions",
+        "https://career.guru99.com/top-85-javascript-interview-questions/",
         "https://github.com/ganqqwerty/123-Essential-JavaScript-Interview-Question",
         "JS Gotchas in interviews - https://air.ghost.io/js-things-i-never-knew-existed/",
         "A perfect guide to javascript interviews - https://medium.com/dev-bits/a-perfect-guide-for-cracking-a-javascript-interview-a-developers-perspective-23a5c0fa4d0d?source=linkShare-65fb0cb3f058-1516610431",
@@ -300,6 +313,7 @@
         "ELB Elastic Load Balancing",
         "ElasticSearch",
         "Kubernetes",
+        "Websockets",
         "Bower",
         "Symfony",
         "HLS",
@@ -359,6 +373,7 @@
         "React Native",
         "AngularJS",
         "Node",
+        "riotjs",
         "MERN",
         "MongoDB",
         "Apollo",
@@ -377,6 +392,7 @@
         "Rust",
         "SQS",
         "SNS",
+        "Phoenix | http://phoenixframework.org/",
         "DynamoDB",
         "Quartz",
         "Ansible",
@@ -609,7 +625,11 @@
         "https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript",
         "https://coderwall.com/p/_ggh2w/the-array-native-every-filter-map-some-foreach-methods",
         "https://medium.freecodecamp.org/three-ways-to-return-largest-numbers-in-arrays-in-javascript-5d977baa80a1",
-        "https://codeburst.io/array-methods-explained-filter-vs-map-vs-reduce-vs-foreach-ea3127c6d319"
+        "https://codeburst.io/array-methods-explained-filter-vs-map-vs-reduce-vs-foreach-ea3127c6d319",
+        "https://risingstars.js.org/2017/en/",
+        "https://career.guru99.com/top-85-javascript-interview-questions/",
+        "https://stackoverflow.com/questions/2492123/pro-javascript-programmer-interview-questions-with-answers",
+        "https://www.codeproject.com/Articles/620811/Latest-JavaScript-Interview-Questions-and-Answers"
 
     ];
 
@@ -677,5 +697,16 @@
 
     function getCodepractice() {
         document.getElementById("codepractice").innerHTML = arrTen[Math.floor(Math.random() * arrTen.length)];
+    }
+</script>
+<script>
+    var arrEleven = [
+        ".splice()",
+        ".pop()"
+
+    ];
+
+    function getArraymethods() {
+        document.getElementById("arraymethods").innerHTML = arrEleven[Math.floor(Math.random() * arrEleven.length)];
     }
 </script>
