@@ -119,6 +119,16 @@
                 </td>
             </tr>
             <div class="space"></div>
+            <tr>
+                <td>
+                    <input type="button" class="button is-primary is-small space is-bordered is-focused" onclick="getCss()" value="CSS Pseudo Class"
+                    />
+                </td>
+                <td>
+                    <div id="css">CSS Pseudo-class</div>
+                </td>
+            </tr>
+            <div class="space"></div>
         </tbody>
     </table>
 </center>
@@ -197,6 +207,7 @@
         "https://www.developer.com/mgmt/three-types-of-interview-questions-software-developers-should-expect.html",
         "http://blog.galvanize.com/coffee-questions/",
         "http://www.bigocheatsheet.com/",
+        "http://math-cs.gordon.edu/courses/cps122/handouts-2014/From%20Python%20to%20Java%20Lecture/A%20Comparison%20of%20the%20Syntax%20of%20Python%20and%20Java.pdf",
         "http://andrewyan.logdown.com/posts/643979-front-end-job-interview-questions",
         "https://www.toptal.com/javascript/interview-questions",
         "https://medium.com/coderbyte/a-tricky-javascript-interview-question-asked-by-google-and-amazon-48d212890703",
@@ -571,6 +582,7 @@
         "What is a relational database and how does it differ from a non-relational database? Answer:  Relational represent and store data in tables and rows vs non relational represent data in collectino of json documents. Mongodb is non relational. https://stackoverflow.com/questions/4811744/what-is-the-difference-between-a-relational-and-non-relational-database",
         "Do you like to work alone or as part of a team?",
         "What’s the best part about your current/last job?",
+        "what is the difference between Java and Python",
         "What’s the most frustrating part about your current/last job?",
         "What are your weaknesses?",
         "What in particular are you most interested in working on?",
@@ -749,5 +761,57 @@
 
     function getArraymethods() {
         document.getElementById("arraymethods").innerHTML = arrEleven[Math.floor(Math.random() * arrEleven.length)];
+    }
+</script>
+<script>
+    var arrTwelve = [
+        ":active",
+":any-link",
+":checked",
+":default",
+":defined",
+":dir()","
+":disabled",
+":empty",
+":enabled",
+":first",
+":first-child",
+":first-of-type",
+":fullscreen",
+":focus",
+":focus-within",
+":host",
+":hover",
+":indeterminate",
+":in-range",
+":invalid",
+":lang()","
+":last-child",
+":last-of-type",
+":left",
+":link",
+":not()",
+":nth-child()",
+":nth-last-child()",
+":nth-last-of-type()"
+":nth-of-type()",
+":only-child",
+":only-of-type",
+":optional",
+":out-of-range",
+":placeholder-shown",
+":read-only",
+":read-write",
+":required",
+":right",
+":root",
+":scope",
+":target",
+":valid".
+":visited"
+    ];
+
+    function getCss() {
+        document.getElementById("css").innerHTML = arrTwelve[Math.floor(Math.random() * arrTwelve.length)];
     }
 </script>
