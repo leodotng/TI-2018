@@ -129,6 +129,16 @@
                 </td>
             </tr>
             <div class="space"></div>
+            <tr>
+                <td>
+                    <input type="button" class="button is-primary is-small space is-bordered is-focused" onclick="getCodingChallenge()" value="Coding Challenge"
+                    />
+                </td>
+                <td>
+                    <div id="codingchallenge">Coding Challenges</div>
+                </td>
+            </tr>
+            <div class="space"></div>
         </tbody>
     </table>
 </center>
@@ -377,6 +387,8 @@
         "GIS | A geographic information system (GIS) is a system designed to capture, store, manipulate, analyze, manage, and present spatial or geographic data.",
         "Mithril",
         "BigTable",
+        "SSI | SQL Server Integration Services",
+        "T-SQL | Transact-SQL",
         "OBIEE",
         "Restify",
         "Azure",
@@ -696,7 +708,8 @@
     var arrEight = [
         "https://repl.it/@leodotng/Fibonacci-Javascript",
         "https://repl.it/@leodotng/Convert-to-Celsius",
-        "https://repl.it/@leodotng/Simplest-FizzBuzz"
+        "https://repl.it/@leodotng/Simplest-FizzBuzz",
+        "https://repl.it/@leodotng/First-Factorial"
 
     ];
 
@@ -833,5 +846,16 @@
 
     function getCss() {
         document.getElementById("css").innerHTML = arrTwelve[Math.floor(Math.random() * arrTwelve.length)];
+    }
+</script>
+
+<script>
+    var arrThirteen = [
+        "https://repl.it/@leodotng/First-Factorial",
+        
+    ];
+
+    function getCodingChallenge() {
+        document.getElementById("codingchallenge").innerHTML = arrThirteen[Math.floor(Math.random() * arrThirteen.length)];
     }
 </script>
