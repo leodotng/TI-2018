@@ -31,3 +31,8 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 50px;
+}
+

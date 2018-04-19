@@ -2,6 +2,7 @@
 <h1>{{title}}</h1> --}}
 <p>
     <h1>Welcome to {{title}}</h1>
+
     When you first start looking for software engineering and developer jobs its easy to get distracted and off topic. Use this
     randomizer to keep yourself motivated and focused!
 
@@ -66,6 +67,16 @@
                 </td>
                 <td>
                     <div id="javascript">JavaScript</div>
+                </td>
+            </tr>
+            <div class="space"></div>
+            <tr>
+                <td>
+                    <input type="button" class="button is-primary is-small space is-bordered is-focused" onclick="getEs6features()" value="ES6 Features"
+                    />
+                </td>
+                <td>
+                    <div id="es6">ES6 Features</div>
                 </td>
             </tr>
             <div class="space"></div>
@@ -338,6 +349,7 @@
         "Anagrams Javascript - https://codereview.stackexchange.com/questions/99247/determining-if-two-words-are-anagrams",
         "Map, filter, reduce, sort",
         "Accumulators",
+        "J2EE technologies: Java, JSP, JMS, JAXB, JDBC",
         "High Order Functions / Hoisting",
         "Closures https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures | https://coderbyte.com/algorithm/3-common-javascript-closure-questions",
         "Amazon Simple Storage Service (S3)",
@@ -345,6 +357,7 @@
         "ElasticSearch",
         "Kubernetes",
         "OpenStack",
+        "Websphere",
         "Websockets",
         "Bower",
         "Symfony",
@@ -444,6 +457,7 @@
         "Chef",
         "Governor.io",
         "Yarn",
+        "tcServer",
         "Elixir",
         "SASS",
         "Laravel",
@@ -697,6 +711,7 @@
         "https://career.guru99.com/top-25-interview-questions-on-node-js/",
         "http://blog.jeremymartin.name/2008/03/understanding-loose-typing-in.html",
         "http://jstherightway.org/",
+        "https://dev.to/maxpou/typical-javascript-interview-exercises-explained",
         "Stacks & Queues with classes: https://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript"
 
     ];
@@ -719,7 +734,7 @@
         "http://www.learn-c.org/en/Linked_lists",
         "https://www.interviewcake.com/",
         "https://www.hiredintech.com/classrooms/system-design/lesson/60",
-        "https://www.educative.io/collection/5642554087309312/5679846214598656"
+        "https://www.educative.io/collection/5642554087309312/5679846214598656",
         "https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/",
         "https://leetcode.com/explore/learn/card/hash-table/",
         "Stacks & Queues with classes: https://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript"
@@ -767,6 +782,7 @@
         "Functional Programming",
         "Paradigm",
         "Pure Functions",
+        "Spread Syntax - JavasScript ES6",
         "lexical-scoped",
         "Currying | Currying is a method of making functions more flexible. With a curried function, you can pass all of the arguments that the function is expecting and get the result, or you can pass only a subset of arguments and receive a function back that waits for the rest of the arguments."
 
@@ -884,10 +900,45 @@
 <script>
     var arrThirteen = [
         "https://repl.it/@leodotng/First-Factorial",
+        "https://repl.it/@leodotng/Print-the-numbers-from-10-to-1-using-a-while-loop",
+        "https://repl.it/@leodotng/Convert-to-Celsius",
+        "https://repl.it/@leodotng/Hey-Arnold-Code-Challenge",
+        "https://repl.it/@leodotng/Iwantthiscodetologout0123"
+
 
     ];
 
     function getCodingChallenge() {
         document.getElementById("codingchallenge").innerHTML = arrThirteen[Math.floor(Math.random() * arrThirteen.length)];
+    }
+</script>
+<script>
+    var arrFourteen = [
+        "arrows",
+        "classes",
+        "enhanced object literals",
+        "template strings",
+        "destructuring",
+        "default + rest + spread",
+        "let + const",
+        "iterators + for..of",
+        "generators",
+        "unicode",
+        "modules",
+        "module loaders",
+        "map + set + weakmap + weakset",
+        "proxies",
+        "symbols",
+        "subclassable built-ins",
+        "promises",
+        "math + number + string + array + object APIs",
+        "binary and octal literals",
+        "reflect api",
+        "tail calls",
+        "https://github.com/lukehoban/es6features#readme"
+    ];
+
+    function getEs6features() {
+        document.getElementById("es6").innerHTML = arrFourteen[Math.floor(Math.random() * arrFourteen.length)];
     }
 </script>
