@@ -1,9 +1,10 @@
 body {
   padding: 50px;
-  font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 10px "Lucida Grande", Helvetica, Arial, sans-serif; */
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  font-family: 'Muli', sans-serif;
 }
 
 a {
