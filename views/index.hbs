@@ -1,7 +1,7 @@
 {{!--
 <h1>{{title}}</h1> --}}
 <p>
-    <h1>Welcome to {{title}}</h1>
+    <h1>{{title}}</h1>
 
     When you first start looking for software engineering and developer jobs its easy to get distracted and off topic. Use this
     randomizer to keep yourself motivated and focused!
@@ -147,6 +147,16 @@
                 </td>
                 <td>
                     <div id="codingchallenge">Coding Challenges</div>
+                </td>
+            </tr>
+            <div class="space"></div>
+            <tr>
+                <td>
+                    <input type="button" class="button is-primary is-small space is-bordered is-focused" onclick="getFrontEnd()" value="Front End"
+                    />
+                </td>
+                <td>
+                    <div id="frontend">Front End</div>
                 </td>
             </tr>
             <div class="space"></div>
@@ -361,12 +371,14 @@
         "Websockets",
         "Bower",
         "Symfony",
+        "SCRUM",
         "HLS",
         "RDS Amazon Relational Database Service",
         "EC2 Amazon Elastic Compute Cloud",
         "Redis Database",
         "Lodash",
         "ActiveMQ",
+        "MQTT",
         "Cloudwatch",
         "JUnit",
         "Hadoop",
@@ -376,14 +388,19 @@
         "RabbitMQ",
         "vCloud",
         "vCenter",
+        "Sailsjs",
         "vSphere",
         "Jedis",
+        "Hapi.js",
+        "Total.js",
+        "LoopBack",
         "Google AMP",
         "SIP | Session Initiation Protocol",
         "URI | Uniform Resource Identifier",
         "JIRA",
         "Simulink",
         "Swift",
+        "actionHero.js",
         "CURL",
         "Simulink",
         "Spring",
@@ -452,12 +469,19 @@
         "Phoenix | http://phoenixframework.org/",
         "DynamoDB",
         "Quartz",
+        "Meteor",
         "Ansible",
         "Terrform",
+        "restify",
+        "Moelculer",
         "Chef",
         "Governor.io",
         "Yarn",
         "tcServer",
+        "Gugamarket",
+        "Koa.js",
+        "Frisby",
+        "facet",
         "Elixir",
         "SASS",
         "Laravel",
@@ -505,7 +529,7 @@
         "Yii",
         "Screaming Frog & Log File Analyser",
         "LUA",
-        "Zend Framework 2 | https://framework.zend.com/manual/2.4/en/index.html",
+        "Zend Framework 2 | https://framework.zend.com/manual/2.4/en/index.html"
 
     ];
 
@@ -670,7 +694,8 @@
         "https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/",
         "https://www.youtube.com/watch?v=FYXpOjwYzcs",
         "https://www.youtube.com/watch?v=zSQIGzmcp2I&feature=youtu.be",
-        "https://www.youtube.com/watch?v=zE9iro4r918"
+        "https://www.youtube.com/watch?v=zE9iro4r918",
+        "https://www.linkedin.com/learning/building-and-deploying-a-full-stack-react-application/what-you-should-know"
 
     ];
 
@@ -711,6 +736,7 @@
         "https://career.guru99.com/top-25-interview-questions-on-node-js/",
         "http://blog.jeremymartin.name/2008/03/understanding-loose-typing-in.html",
         "http://jstherightway.org/",
+        "https://webapplog.com/es6/",
         "https://dev.to/maxpou/typical-javascript-interview-exercises-explained",
         "Stacks & Queues with classes: https://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript"
 
@@ -737,10 +763,8 @@
         "https://www.educative.io/collection/5642554087309312/5679846214598656",
         "https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/",
         "https://leetcode.com/explore/learn/card/hash-table/",
+        "https://nordicapis.com/13-node-js-frameworks-to-build-web-apis/",
         "Stacks & Queues with classes: https://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript"
-
-
-
     ];
 
     function getComputerScience() {
@@ -753,7 +777,8 @@
         "https://repl.it/@leodotng/Convert-to-Celsius",
         "https://repl.it/@leodotng/Simplest-FizzBuzz",
         "https://repl.it/@leodotng/First-Factorial",
-        "https://repl.it/@leodotng/Private-Properties-using-closures"
+        "https://repl.it/@leodotng/Private-Properties-using-closures",
+        "https://repl.it/@leodotng/Closures-in-JavaScript"
 
     ];
 
@@ -903,7 +928,10 @@
         "https://repl.it/@leodotng/Print-the-numbers-from-10-to-1-using-a-while-loop",
         "https://repl.it/@leodotng/Convert-to-Celsius",
         "https://repl.it/@leodotng/Hey-Arnold-Code-Challenge",
-        "https://repl.it/@leodotng/Iwantthiscodetologout0123"
+        "https://repl.it/@leodotng/Iwantthiscodetologout0123",
+        "https://repl.it/@leodotng/WriteFunc2argreturns-larger",
+        "https://repl.it/@leodotng/usestrictinJavaScript",
+    
 
 
     ];
@@ -915,6 +943,11 @@
 <script>
     var arrFourteen = [
         "arrows",
+        "Default Parameters",
+        "Template Literals",
+        "mult-line strings",
+        "promises",
+        "classes",
         "classes",
         "enhanced object literals",
         "template strings",
@@ -940,5 +973,19 @@
 
     function getEs6features() {
         document.getElementById("es6").innerHTML = arrFourteen[Math.floor(Math.random() * arrFourteen.length)];
+    }
+</script>
+<script>
+    var arrFifteen = [
+        "https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44",
+        "https://techblog.appnexus.com/five-tips-for-working-with-redux-in-large-applications-89452af4fdcb",
+        "https://www.sohamkamani.com/blog/2017/03/31/react-redux-connect-explained/",
+        "https://reacttraining.com/react-router/web/guides/quick-start",
+        "https://css-tricks.com/learning-react-router/"
+       
+    ];
+
+    function getFrontEnd() {
+        document.getElementById("frontend").innerHTML = arrFifteen[Math.floor(Math.random() * arrFifteen.length)];
     }
 </script>
