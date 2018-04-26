@@ -67,6 +67,9 @@ input[type="text"] {
 h1 {
   font-size: 50px;
 }
+h2 {
+  font-size: 20px;
+}
 
 .button-align {
   align-content: center;
