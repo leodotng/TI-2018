@@ -195,6 +195,18 @@
                             <div id="frontend">Front End</div>
                         </td>
                     </tr>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCourses()" value="Courses"
+                            />
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="courses">Courses</div>
+                        </td>
+                    </tr>
                     <div class="space"></div>
             </tbody>
         </table>
@@ -477,6 +489,7 @@
         "Azure",
         "Mockito",
         "Gulp",
+        "YUI",
         "Express",
         "Mocha.js",
         "Chai.js",
@@ -506,6 +519,7 @@
         "Golang",
         "XML",
         "JSON",
+        "noSQL",
         "Chef",
         "Typescript",
         "Rust",
@@ -541,6 +555,7 @@
         "Tableau",
         "Selenium",
         "C#",
+        'Karma | JS Test runner',
         "ORM - Object Relational Mapping",
         "ASP.NET",
         "Ansible",
@@ -725,9 +740,11 @@
         "http://builtincolorado.com/jobs",
         "https://stackoverflow.com/jobs/remote-developer-jobs",
         "http://www.indeed.com/",
+        "http://www.workday.com/",
         "http://www.glassdoor.com/",
         "https://www.pramp.com/#/",
         "https://www.toptal.com/",
+        "https://www.guru.com/d/jobs/",
         "http://www.hired.com/",
         "http://www.dice.com",
         "https://triplebyte.com/",
@@ -750,6 +767,8 @@
         "https://www.youtube.com/watch?v=FYXpOjwYzcs",
         "https://www.youtube.com/watch?v=zSQIGzmcp2I&feature=youtu.be",
         "https://www.youtube.com/watch?v=zE9iro4r918",
+        "https://www.youtube.com/watch?v=vPEJSJMg4jY",
+        "https://www.youtube.com/watch?v=iLJeGqPVNCY",
         "https://www.linkedin.com/learning/building-and-deploying-a-full-stack-react-application/what-you-should-know"
 
     ];
@@ -792,7 +811,9 @@
         "https://career.guru99.com/top-25-interview-questions-on-node-js/",
         "http://blog.jeremymartin.name/2008/03/understanding-loose-typing-in.html",
         "http://jstherightway.org/",
+        "https://softwareengineering.stackexchange.com/questions/251101/i-know-javascript-really-well-but-i-bomb-coding-interviews",
         "https://webapplog.com/es6/",
+        "https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce",
         "https://www.sitepoint.com/5-typical-javascript-interview-exercises/",
         "https://dev.to/maxpou/typical-javascript-interview-exercises-explained",
         "Stacks & Queues with classes: https://stackoverflow.com/questions/1590247/how-do-you-implement-a-stack-and-a-queue-in-javascript"
@@ -887,7 +908,9 @@
         "http://www.codefights.com/",
         "http://coderbyte.com",
         "https://interviewing.io/",
-        "http://www.leetcode.com"
+        "http://www.leetcode.com",
+        "https://codecombat.com/",
+        "https://www.hackerearth.com/"
 
     ];
 
@@ -1020,11 +1043,12 @@
         "promises",
         "classes",
         "classes",
+        "recursion",
         "enhanced object literals",
         "template strings",
         "destructuring",
         "default + rest + spread",
-        "let + const",
+        "let + const block scope",
         "iterators + for..of",
         "generators",
         "unicode",
@@ -1035,6 +1059,27 @@
         "symbols",
         "subclassable built-ins",
         "promises",
+        "Template literals",
+        "Destructuring objects",
+        "Destructuring arrays",
+        "For of loop",
+        "spread operator",
+        "rest operator",
+        "Arrow Functions",
+        "Default Params",
+        "Export and import",
+        "trailing commas",
+        "includes()",
+        "Async & await",
+        "padStart() & padEnd()",
+        "Exponential Operator",
+        "Object.values()",
+        "Object.entries()",
+        "Maps",
+        "Ojbect.getOwnPropertyDescriptor()",
+        "Object.getOwnPropertyDescriptors()",
+        "sets"
+        "classes",
         "math + number + string + array + object APIs",
         "binary and octal literals",
         "reflect api",
@@ -1054,7 +1099,11 @@
         "https://reacttraining.com/react-router/web/guides/quick-start",
         "https://css-tricks.com/learning-react-router/",
         "Computed Properties",
+        "http://alistapart.com/",
+        "https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56",
+        "https://www.robinwieruch.de/react-graphql-apollo-tutorial/",
         "lifestyle Hooks",
+        "https://frontendfoc.us/",
         "https://www.carlrippon.com/writing-concise-react-components-with-destructure-assignment-and-spread/",
         "https://www.leemunroe.com/designing-for-high-resolution-retina-displays/"
 
@@ -1062,6 +1111,17 @@
 
     function getFrontEnd() {
         document.getElementById("frontend").innerHTML = arrFifteen[Math.floor(Math.random() * arrFifteen.length)];
+    }
+</script>
+
+<script>
+    var arrSixteen = [
+        "https://www.educative.io/collection/5642554087309312/5679846214598656?affiliate_id=5082902844932096&utm_source=facebook&utm_medium=fbvideo&utm_campaign=coderust_animated_video&utm_content=conversion_ad"
+
+    ];
+
+    function getCourses() {
+        document.getElementById("courses").innerHTML = arrSixteen[Math.floor(Math.random() * arrSixteen.length)];
     }
 </script>
 
