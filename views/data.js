@@ -1,4 +1,5 @@
 
+    <script>
     var arr = [
         "http://www.techbeamers.com/top-web-developer-interview-questions/",
         "https://www.linkedin.com/groups/3926212/3926212-6390949450205974529?midToken=AQEMDx-FRb3d-g&trk=eml-b2_anet_digest_of_digests-group_discussions-18-discussion~subject&trkEmail=eml-b2_anet_digest_of_digests-group_discussions-18-discussion~subject-null-v8kep~jg3zph3y~m7-null-communities~group~discussion&lipi=urn%3Ali%3Apage%3Aemail_b2_anet_digest_of_digests%3B5zlzbPWBSOuMF6hNjzDJKw%3D%3D",
@@ -110,7 +111,8 @@
     function getItem() {
         document.getElementById("interview").innerHTML = arr[Math.floor(Math.random() * arr.length)];
     }
-
+</script>
+<script>
     var arrTwo = [
         "Immutablejs",
         "Debouncing",
@@ -322,10 +324,12 @@
 
     ];
 
+
     function getItemTopic() {
         document.getElementById("topic").innerHTML = arrTwo[Math.floor(Math.random() * arrTwo.length)];
     }
-
+</script>
+<script>
     var arrThree = [
         "What is negative infinity?",
         "Code a Linked List",
@@ -460,6 +464,8 @@
     function getInterviewQuestion() {
         document.getElementById("interviewQuestion").innerHTML = arrThree[Math.floor(Math.random() * arrThree.length)];
     }
+    </script>
+<script>
 
     var arrFour = [
         "http://huntr.co",
@@ -483,6 +489,8 @@
     function getjobTool() {
         document.getElementById("jobTool").innerHTML = arrFour[Math.floor(Math.random() * arrFour.length)];
     }
+    </script>
+<script>
 
     var arrFive = [
         "https://www.youtube.com/watch?v=k7-N8R0-KY4",
@@ -500,7 +508,8 @@
     function getVideo() {
         document.getElementById("getVideo").innerHTML = arrFive[Math.floor(Math.random() * arrFive.length)];
     }
-
+</script>
+<script>
     var arrSix = [
         "https://medium.freecodecamp.org/javascripts-apply-call-and-bind-explained-by-hosting-a-cookout-84b85977ee11",
         "https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e",
@@ -586,7 +595,8 @@
     function getJavascript() {
         document.getElementById("javascript").innerHTML = arrSix[Math.floor(Math.random() * arrSix.length)];
     }
-
+</script>
+<script>
     // computer science
 
     var arrSeven = [
@@ -619,7 +629,8 @@
     function getComputerScience() {
         document.getElementById("computerscience").innerHTML = arrSeven[Math.floor(Math.random() * arrSeven.length)];
     }
-
+</script>
+<script>
     var arrEight = [
         "https://repl.it/@leodotng/Fibonacci-Javascript",
         "https://repl.it/@leodotng/Convert-to-Celsius",
@@ -633,7 +644,8 @@
     function getRepl() {
         document.getElementById("repl").innerHTML = arrEight[Math.floor(Math.random() * arrEight.length)];
     }
-
+</script>
+<script>
     var arrNine = [
         "instantiation",
         "Constructor Functions",
@@ -666,7 +678,8 @@
     function getVocab() {
         document.getElementById("vocab").innerHTML = arrNine[Math.floor(Math.random() * arrNine.length)];
     }
-
+</script>
+<script>
     var arrTen = [
         "http://www.codewars.com/",
         "http://www.codefights.com/",
@@ -681,7 +694,8 @@
     function getCodepractice() {
         document.getElementById("codepractice").innerHTML = arrTen[Math.floor(Math.random() * arrTen.length)];
     }
-
+</script>
+<script>
     var arrEleven = [
         ".splice()",
         ".pop()",
@@ -720,7 +734,8 @@
     function getArraymethods() {
         document.getElementById("arraymethods").innerHTML = arrEleven[Math.floor(Math.random() * arrEleven.length)];
     }
-
+</script>
+<script>
     var arrTwelve = [
         ":active",
         ":any-link",
@@ -776,7 +791,8 @@
     function getCss() {
         document.getElementById("css").innerHTML = arrTwelve[Math.floor(Math.random() * arrTwelve.length)];
     }
-
+</script>
+<script>
 
     var arrThirteen = [
         "https://repl.it/@leodotng/First-Factorial",
@@ -796,7 +812,8 @@
         document.getElementById("codingchallenge").innerHTML = arrThirteen[Math.floor(Math.random() * arrThirteen.length)];
     }
 
-
+</script>
+<script>
     var arrFourteen = [
         "arrows",
         "Default Parameters",
@@ -854,7 +871,8 @@
     function getEs6features() {
         document.getElementById("es6").innerHTML = arrFourteen[Math.floor(Math.random() * arrFourteen.length)];
     }
-
+</script>
+<script>
     var arrFifteen = [
         "https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44",
         "https://techblog.appnexus.com/five-tips-for-working-with-redux-in-large-applications-89452af4fdcb",
@@ -875,7 +893,8 @@
     function getFrontEnd() {
         document.getElementById("frontend").innerHTML = arrFifteen[Math.floor(Math.random() * arrFifteen.length)];
     }
-
+</script>
+<script>
     var arrSixteen = [
         "https://www.educative.io/collection/5642554087309312/5679846214598656?affiliate_id=5082902844932096&utm_source=facebook&utm_medium=fbvideo&utm_campaign=coderust_animated_video&utm_content=conversion_ad"
 
@@ -885,3 +904,4 @@
         document.getElementById("courses").innerHTML = arrSixteen[Math.floor(Math.random() * arrSixteen.length)];
     }
 
+</script>
