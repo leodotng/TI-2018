@@ -1,36 +1,37 @@
 <section class="hero is-medium is-danger is-bold is-fluid container">
     <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Interview Related</a>
-    <a href="#">Topic To Study</a>
-    <a href="#">Interview Question</a>
-    <a href="#">Job Search Tool</a>
-    <a href="#">Videos</a>
-    <a href="#">JavaScript</a>
-    <a href="#">ES6 Features</a>
-    <a href="#">Computer Science & Algorithms</a>
-    <a href="#">REPL Code Sample</a>
-    <a href="#">New Vocab</a>
-    <a href="#">Code Practice</a>
-    <a href="#">Array Methods</a>
-    <a href="#">CSS + Design</a>
-    <a href="#">Coding Challenge</a>
-    <a href="#">Front End</a>
-    <a href="#">Courses</a>
-</div>
-<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Interview Related</a>
+        <a href="#">Topic To Study</a>
+        <a href="#">Interview Question</a>
+        <a href="#">Job Search Tool</a>
+        <a href="#">Videos</a>
+        <a href="#">JavaScript</a>
+        <a href="#">ES6 Features</a>
+        <a href="#">Computer Science & Algorithms</a>
+        <a href="#">REPL Code Sample</a>
+        <a href="#">New Vocab</a>
+        <a href="#">Code Practice</a>
+        <a href="#">Array Methods</a>
+        <a href="#">CSS + Design</a>
+        <a href="#">Coding Challenge</a>
+        <a href="#">Front End</a>
+        <a href="#">Courses</a>
+    </div>
+    <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                TI-2018 <br>Technical Interview Resources for 2018
+                TI-2018
+                <br>Technical Interview Resources for 2018
             </h1>
             <h3 class="subtitle">
                 When you first start looking for software jobs its easy to get distracted and off topic. Use this randomizer to keep yourself
@@ -42,6 +43,36 @@
 
 
 <h2>TOPIC OF THE WEEK: Object.values </h2>
+<form class="field is-grouped-right">
+    <div class="container shadow card">
+        <div class="child">
+            <input class="input" type="text" placeholder="URL Or Topic">
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>Interview Related</option>
+                        <option>Topic</option>
+                        <option>Interview Question</option>
+                        <option>Job Search Tool</option>
+                        <option>Videos</option>
+                        <option>JavaScript</option>
+                        <option>ES6 Features</option>
+                        <option>Computer Science & Algorithms</option>
+                        <option>REPL Code Sample</option>
+                        <option>New Vocab</option>
+                        <option>Code Practice</option>
+                        <option>Array Methods</option>
+                        <option>CSS + Design</option>
+                        <option>Coding Challenge</option>
+                        <option>Front End</option>
+                        <option>Courses</option>
+                    </select>
+                </div>
+                <button class="button is-danger is-outlined">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
 <div class="container is-fluid">
     <div class="">
         <table class="table is-bordered is-striped is-hoverable flex-item shadow-lg">
@@ -72,8 +103,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getInterviewQuestion()"
-                            value="Interview Question" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getInterviewQuestion()" value="Interview Question"
+                        />
                     </td>
                 </tr>
                 <tr class="flex-item">
@@ -108,8 +139,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getJavascript()"
-                            value="JavaScript" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getJavascript()" value="JavaScript"
+                        />
                     </td>
                 </tr>
                 <tr class="flex-item">
@@ -120,8 +151,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getEs6features()"
-                            value="ES6 Features" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getEs6features()" value="ES6 Features"
+                        />
                     </td>
                 </tr>
                 <tr class="flex-item">
@@ -132,8 +163,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getComputerScience()"
-                            value="Computer Science & Algorithms" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getComputerScience()" value="Computer Science & Algorithms"
+                        />
                     </td>
                 </tr>
                 <tr class="flex-item">
@@ -168,8 +199,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCodepractice()"
-                            value="Code Practice" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCodepractice()" value="Code Practice"
+                        />
                     </td class="button-align">
                 </tr>
                 <tr class="flex-item">
@@ -180,8 +211,8 @@
                 <div class="space"></div>
                 <tr class="flex-item">
                     <td class="button-align">
-                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getArraymethods()"
-                            value="Array Methods" />
+                        <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getArraymethods()" value="Array Methods"
+                        />
                     </td>
                     <tr class="flex-item">
                         <td class="button-align">
@@ -191,8 +222,7 @@
                     <div class="space"></div>
                     <tr class="flex-item">
                         <td class="button-align">
-                            <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCss()" value="CSS"
-                            />
+                            <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCss()" value="CSS" />
                         </td>
                     </tr>
                     <tr class="flex-item">
@@ -203,8 +233,8 @@
                     <div class="space"></div>
                     <tr class="flex-item">
                         <td class="button-align">
-                            <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCodingChallenge()"
-                                value="Coding Challenge" />
+                            <input type="button" class="button is-danger is-medium space is-bordered is-focused" onclick="getCodingChallenge()" value="Coding Challenge"
+                            />
                         </td>
                     </tr>
                     <tr class="flex-item">
@@ -241,163 +271,6 @@
         </table>
     </div>
 </div>
-
-
-
-<div class="shadow-lg container">
-    <form>
-        <div class="space card child">
-            Add Interview Link
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Interview Link">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Topics to study
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Topics to study">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Interview Question
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Interview Question">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Job Search Tool
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Job Search Tool">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Videos
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Videos">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            JavaScript
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="JavaScript">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            ES6 Features
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="ES6 Featurest">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Computer Science & Algorithms
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Computer Science & Algorithms">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            REPL Code samples
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="REPL Code Samples">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            New Coding Vocab
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="New Coding Vocab">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Code Practice
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Code Practice">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Array Methods
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Array Methods">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            CSS + Design
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="CSS + Design">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Coding Challenges
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Coding Challenges">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Front End
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Front End">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-        <div class="space card child">
-            Courses
-            <div class="space above card child">
-                <input class="input" type="text" placeholder="Courses">
-
-
-                <button class="button is-danger is-outlined">Submit</button>
-            </div>
-        </div>
-
-</div>
-
-
-
-
-</form>
-
 
 
 
