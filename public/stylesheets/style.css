@@ -1,8 +1,10 @@
-body {
+html, body {
   padding: 0;
   text-align: center;
   font-family: "Muli", sans-serif;
   width: 100%;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
