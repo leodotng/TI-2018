@@ -1,252 +1,252 @@
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Interview Related</a>
-  <a href="#">Topic To Study</a>
-  <a href="#">Interview Question</a>
-  <a href="#">Job Search Tool</a>
-  <a href="#">Videos</a>
-  <a href="#">JavaScript</a>
-  <a href="#">ES6 Features</a>
-  <a href="#">Computer Science & Algorithms</a>
-  <a href="#">REPL Code Sample</a>
-  <a href="#">New Vocab</a>
-  <a href="#">Code Practice</a>
-  <a href="#">Array Methods</a>
-  <a href="#">CSS + Design</a>
-  <a href="#">Coding Challenge</a>
-  <a href="#">Front End</a>
-  <a href="#">Courses</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Interview Related</a>
+    <a href="#">Topic To Study</a>
+    <a href="#">Interview Question</a>
+    <a href="#">Job Search Tool</a>
+    <a href="#">Videos</a>
+    <a href="#">JavaScript</a>
+    <a href="#">ES6 Features</a>
+    <a href="#">Computer Science & Algorithms</a>
+    <a href="#">REPL Code Sample</a>
+    <a href="#">New Vocab</a>
+    <a href="#">Code Practice</a>
+    <a href="#">Array Methods</a>
+    <a href="#">CSS + Design</a>
+    <a href="#">Coding Challenge</a>
+    <a href="#">Front End</a>
+    <a href="#">Courses</a>
 </div>
 
 
 <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 </script>
 <section class="hero is-medium is-danger is-bold is-fluid container">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        TI-2018 Technical Interview Resources for 2018
-      </h1>
-      <h2 class="subtitle">
-        When you first start looking for software jobs its easy to get distracted and off topic. Use this
-                randomizer to keep yourself motivated and focused!
-      </h2>
-    </div>
-  </div>
-</section>
-
-    <div class="container is-fluid card">
-        <div class="flex-item">
-            <table class="table is-bordered is-striped is-hoverable flex-item shadow-lg">
-                <tbody>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space" onclick="getItem()" value="INTERVIEW RELATED" />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="interview" class="center">Interview Related</div>
-                        </td>
-                    </tr>
-
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getItemTopic()" value="TOPIC to Study"
-                            />
-                            <br> Here are topics and technologies found across many job postings
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="topic">Topic to Study</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getInterviewQuestion()"
-                                value="Interview Question" />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="interviewQuestion">Interview Question</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getjobTool()" value="Job Search Tool"
-                            />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="jobTool">Job Tool</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getVideo()" value="Videos"
-                            />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="getVideo">Video</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getJavascript()"
-                                value="JavaScript" />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="javascript">JavaScript</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getEs6features()"
-                                value="ES6 Features" />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="es6">ES6 Features</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getComputerScience()"
-                                value="Computer Science & Algorithms" />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="computerscience">Computer Science & Algorithms</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getRepl()" value="REPL Code Sample"
-                            />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="repl">REPL</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getVocab()" value="New Vocab"
-                            />
-                        </td>
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="vocab">New Vocabulary</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCodepractice()"
-                                value="Code Practice" />
-                        </td class="button-align">
-                    </tr>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <div id="codepractice">Code Practice</div>
-                        </td>
-                    </tr>
-                    <div class="space"></div>
-                    <tr class="flex-item">
-                        <td class="button-align">
-                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getArraymethods()"
-                                value="Array Methods" />
-                        </td>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <div id="arraymethods">Array Methods</div>
-                            </td>
-                        </tr>
-                        <div class="space"></div>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCss()" value="CSS"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <div id="css">CSS </div>
-                            </td>
-                        </tr>
-                        <div class="space"></div>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCodingChallenge()"
-                                    value="Coding Challenge" />
-                            </td>
-                        </tr>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <div id="codingchallenge">Coding Challenges</div>
-                            </td>
-                        </tr>
-                        <div class="space"></div>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getFrontEnd()" value="Front End"
-                                />
-                            </td>
-                        </tr>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <div id="frontend">Front End</div>
-                            </td>
-                        </tr>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCourses()" value="Courses"
-                                />
-                            </td>
-                        </tr>
-                        <div class="space"></div>
-                        <tr class="flex-item">
-                            <td class="button-align">
-                                <div id="courses">Courses</div>
-                            </td>
-                        </tr>
-                        <div class="space"></div>
-                </tbody>
-            </table>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                TI-2018 Technical Interview Resources for 2018
+            </h1>
+            <h2 class="subtitle">
+                When you first start looking for software jobs its easy to get distracted and off topic. Use this randomizer to keep yourself
+                motivated and focused!
+            </h2>
         </div>
     </div>
+</section>
+
+<div class="container is-fluid card">
+    <div class="flex-item">
+        <table class="table is-bordered is-striped is-hoverable flex-item shadow-lg">
+            <tbody>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space" onclick="getItem()" value="INTERVIEW RELATED" />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="interview" class="center">Interview Related</div>
+                    </td>
+                </tr>
+
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getItemTopic()" value="TOPIC to Study"
+                        />
+                        <br> Here are topics and technologies found across many job postings
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="topic">Topic to Study</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getInterviewQuestion()"
+                            value="Interview Question" />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="interviewQuestion">Interview Question</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getjobTool()" value="Job Search Tool"
+                        />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="jobTool">Job Tool</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getVideo()" value="Videos"
+                        />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="getVideo">Video</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getJavascript()"
+                            value="JavaScript" />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="javascript">JavaScript</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getEs6features()"
+                            value="ES6 Features" />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="es6">ES6 Features</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getComputerScience()"
+                            value="Computer Science & Algorithms" />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="computerscience">Computer Science & Algorithms</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getRepl()" value="REPL Code Sample"
+                        />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="repl">REPL</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getVocab()" value="New Vocab"
+                        />
+                    </td>
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="vocab">New Vocabulary</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCodepractice()"
+                            value="Code Practice" />
+                    </td class="button-align">
+                </tr>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <div id="codepractice">Code Practice</div>
+                    </td>
+                </tr>
+                <div class="space"></div>
+                <tr class="flex-item">
+                    <td class="button-align">
+                        <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getArraymethods()"
+                            value="Array Methods" />
+                    </td>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="arraymethods">Array Methods</div>
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCss()" value="CSS"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="css">CSS </div>
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCodingChallenge()"
+                                value="Coding Challenge" />
+                        </td>
+                    </tr>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="codingchallenge">Coding Challenges</div>
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getFrontEnd()" value="Front End"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="frontend">Front End</div>
+                        </td>
+                    </tr>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <input type="button" class="button is-danger is-rounded is-small space is-bordered is-focused" onclick="getCourses()" value="Courses"
+                            />
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+                    <tr class="flex-item">
+                        <td class="button-align">
+                            <div id="courses">Courses</div>
+                        </td>
+                    </tr>
+                    <div class="space"></div>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 
-<div class="shadow-lg parent">
+<div class="shadow-lg container">
     <form>
         <div class="space card child">
             Add Interview Link
@@ -1309,11 +1309,12 @@ function closeNav() {
 </script>
 
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>TI-2018</strong> A constantly updated Technical Interview help app by <a href="https://josh.leo.ng">Josh Leong</a>.
-      </p>
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <strong>TI-2018</strong> A constantly updated Technical Interview help app by
+                <a href="https://josh.leo.ng">Josh Leong</a>.
+            </p>
+        </div>
     </div>
-  </div>
 </footer>
