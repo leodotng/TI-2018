@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  justify-content: center;
   margin: 0;
   /* font: 10px "Lucida Grande", Helvetica, Arial, sans-serif; */
   text-align: center;
@@ -129,6 +130,19 @@ h2 {
 .sidenav a:hover {
   color: #f1f1f1;
 }
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.child {
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
 
 .sidenav .closebtn {
   position: absolute;
@@ -141,4 +155,8 @@ h2 {
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
+}
+
+@-ms-viewport{
+  width: device-width;
 }
