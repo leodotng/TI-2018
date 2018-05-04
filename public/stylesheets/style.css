@@ -51,6 +51,10 @@ a {
   justify-content: center;
   text-align: center;
 }
+img {
+  height: 75px;
+  width: 70px;
+}
 
 /* .above {
   padding-top: 5px;
