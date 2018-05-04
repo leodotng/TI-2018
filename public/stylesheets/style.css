@@ -1,30 +1,25 @@
 body {
   padding: 0;
-  justify-content: center;
-  margin: 0;
   text-align: center;
   font-family: "Muli", sans-serif;
   width: 100%;
-  /* width: 100%;
-  height: 100%; */
 }
 
 a {
   color: #00b7ff;
 }
 
-.space {
+/* .space {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0.5px;
   padding-bottom: .5px;
-  
+   */
 }
 
 .flex-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  display: flex-grow;
+  align-content: stretch; 
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -36,17 +31,14 @@ a {
   -moz-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
+  align-self: center
 }
 
 .shadow-lg {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* .flex-item {
+.flex-item {
   margin: 0px;
   width: 100%;
   height: 100%;
@@ -57,7 +49,7 @@ a {
   justify-content: center;
   text-align: center;
   
-} */
+}
 
 /* .above {
   padding-top: 5px;
@@ -153,6 +145,7 @@ h2 {
 .sidenav a {font-size: 18px;}
 }
 
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
+
