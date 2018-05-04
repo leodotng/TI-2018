@@ -90,6 +90,8 @@ h2 {
   transition: 0.3s;
   width: 75%;
   text-align: center;
+  align-self: center;
+  align-items: center;
   
   
 }
@@ -109,7 +111,7 @@ h2 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #FC3059;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -118,8 +120,8 @@ h2 {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  color: #FFFFFF;
   display: block;
   transition: 0.3s;
 }
@@ -132,7 +134,7 @@ h2 {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 50px;
 }
 
