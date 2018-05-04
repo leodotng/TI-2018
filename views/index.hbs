@@ -1,5 +1,35 @@
-{{!--
-<h1>{{title}}</h1> --}}
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Interview Related</a>
+  <a href="#">Topic To Study</a>
+  <a href="#">Interview Question</a>
+  <a href="#">Job Search Tool</a>
+  <a href="#">Videos</a>
+  <a href="#">JavaScript</a>
+  <a href="#">ES6 Features</a>
+  <a href="#">Computer Science & Algorithms</a>
+  <a href="#">REPL Code Sample</a>
+  <a href="#">New Vocab</a>
+  <a href="#">Code Practice</a>
+  <a href="#">Array Methods</a>
+  <a href="#">CSS + Design</a>
+  <a href="#">Coding Challenge</a>
+  <a href="#">Front End</a>
+  <a href="#">Courses</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <center>
     <div class="container flex-container full-width">
         <div class="column notification flex-item">
@@ -16,7 +46,7 @@
 
     <div class="container flex-container full-width">
         <div class="notification flex-item">
-            <table class="table is-bordered is-striped is-hoverable flex-item">
+            <table class="table is-bordered is-striped is-hoverable flex-item shadow-lg">
                 <tbody>
                     <tr class="flex-item">
                         <td class="button-align">
@@ -219,9 +249,9 @@
 
 
 
-<div>
+<div class="shadow-lg">
     <form>
-        <div class="space">
+        <div class="space card">
             Add Interview Link
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Interview Link">
@@ -230,7 +260,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Topics to study
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Topics to study">
@@ -239,7 +269,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Interview Question
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Interview Question">
@@ -248,7 +278,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Job Search Tool
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Job Search Tool">
@@ -257,7 +287,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Videos
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Videos">
@@ -266,7 +296,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             JavaScript
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="JavaScript">
@@ -275,7 +305,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             ES6 Features
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="ES6 Featurest">
@@ -284,7 +314,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Computer Science & Algorithms
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Computer Science & Algorithms">
@@ -293,7 +323,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             REPL Code samples
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="REPL Code Samples">
@@ -302,7 +332,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             New Coding Vocab
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="New Coding Vocab">
@@ -311,7 +341,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Code Practice
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Code Practice">
@@ -320,7 +350,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Array Methods
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Array Methods">
@@ -329,7 +359,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             CSS + Design
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="CSS + Design">
@@ -338,7 +368,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Coding Challenges
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Coding Challenges">
@@ -347,7 +377,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Front End
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Front End">
@@ -356,7 +386,7 @@
                 <button class="button is-link">Submit</button>
             </div>
         </div>
-        <div class="space">
+        <div class="space card">
             Courses
             <div class="space above">
                 <input class="input is-rounded" type="text" placeholder="Courses">
