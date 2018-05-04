@@ -885,23 +885,3 @@
         document.getElementById("courses").innerHTML = arrSixteen[Math.floor(Math.random() * arrSixteen.length)];
     }
 
-    module.exports = {
-        
-    getItem,
-    getItemTopic,
-    getInterviewQuestion,
-    getjobTool,
-    getVideo,
-    getJavascript,
-    getComputerScience,
-    getRepl,
-    getVocab,
-    getCodepractice,
-    getArraymethods,
-    getCss,
-    getCodingChallenge,
-    getEs6features,
-    getFrontEnd,
-    getCourses,
-    
-    }
