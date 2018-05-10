@@ -1,7 +1,7 @@
 html, body {
   padding: 0;
   text-align: center;
-  font-family: "Muli", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   width: 100%;
   max-width: 100%;
     overflow-x: hidden;
@@ -176,3 +176,6 @@ textarea,input.button{
 #fix{
   display:flex !important
 }
+
+.btn-grad {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%)}
+.btn-grad:hover { background-position: right center; }
